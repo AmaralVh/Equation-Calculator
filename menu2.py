@@ -23,4 +23,4 @@ else:
     solution = sl.highDegreeSolution(coef, degree, roots, i)
     
 
-print(f'The solution of the equation in the real numbers is {solution}')
+print(f'The solution of the equation is {solution}')

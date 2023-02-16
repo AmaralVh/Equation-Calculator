@@ -50,7 +50,10 @@ def quadraticEquationSolution(coef):
     print(f'Delta = {delta}')
     
     if delta < 0:
-        return []
+        solution = []
+        solution.append(str( (-1 * coef[1]) / (2 * coef[0]) ) + ' + ' + str(math.sqrt(-delta) / (2 * coef[0])) + 'i')
+        solution.append(str( (-1 * coef[1]) / (2 * coef[0]) ) + ' - ' + str(math.sqrt(-delta) / (2 * coef[0])) + 'i')
+        return solution
     elif delta == 0:
         solution = (-1 * coef[1]) / (2 * coef[0])
         return solution
