@@ -62,6 +62,7 @@ def quadraticEquationSolution(coef):
 
     
 def highDegreeSolution(coef, degree, roots, i):
+    # Base case:
     if degree == 2:
         roots = roots + quadraticEquationSolution(coef)
         return roots
@@ -81,4 +82,5 @@ def highDegreeSolution(coef, degree, roots, i):
         
         print(f'New coefficients: {new_coef}')
         
+        # Call the function recursively:
         return highDegreeSolution(new_coef, degree - 1, roots, i)
